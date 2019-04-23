@@ -1,74 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../materialize/css/materialize.min.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
-    <title>Nuevo Seguimiento</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../materialize/css/materialize.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+  <title>Nuevo Seguimiento</title>
 </head>
-<body class="#ae193e pink darken-4">
-    <script type="text/javascript">
-         $(document).ready(function(){
-        $('select').formSelect();
-        });
-    </script>
-    <div class="container">
-            <div class="row">
-                <div class="col s12 m12 l12">
-                </div>
-            </div>
-            <div class="row white z-depth-2">
-                <div class="col s12 m12 l12">
-                    <div class="card">
-                        <div class="card-action pink darken-4 white-text center">
-                            <h3>Nuevo Seguimiento</h3>
-                        </div>
-                        <div class="card-content">
-                            <div class="form-field">
-                                <label for="guial"><h5>Guia: </h5></label>
-                                <h5>Jardin Botanico</h5>
-                            </div>
-                            <div class="form-field">
-                                    <label for="estudiantesl"><h5>Numero de estudaintes: </h5></label>
-                                    <input type="number" name="nestu" id="nestu" value="15">
-                            </div>
-                            <div class="form-field">
-                                    <label for="benefi"><h5>Numero de beneficiarios: </h5></label>
-                                    <input type="number" name="nestu" id="nestu" value="15">
-                            </div>
-                            <div class="form-field">
-                                    <label for="Docente"><h5>Docente Responsable: </h5></label>
-                                    <div class="input-field">
-                                        <select name="doc" id="doc">
-                                            <option value="1">Ing.Corenejo</option>
-                                            <option value="2">Ing. Acevedo</option>
-                                        </select>
-                                    </div>
-                            </div>
-                            <div class="form-field">
-                                <label for="descN"><h5>Descripcion: </h5></label>
-                                <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
-                            </div>
-                            <div class="form-field">
-                                    <label for="evid"><h5>Evidencia: </h5></label>
-                                    <button class="btn waves-effect waves-light pink darken-4" type="submit" name="action"> Subir Archivo</button>
-                            </div><br>
-                            <div class="form-field">
-                                <button class="btn waves-effect waves-light pink darken-4" type="submit" name="action">Guardar
-                                    <i class="material-icons right">send</i>
-                                </button>
-                                <button class="btn waves-effect waves-light pink darken-4" type="submit" name="action">Guardar
-                                    <i class="material-icons right">cancel</i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<body>
+  <script type="text/javascript">
+       $(document).ready(function(){
+      $('select').formSelect();
+      });
+  </script>
+<script>
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+    });
+</script>
+  <nav>
+    <div class="nav-wrapper #ae193e pink darken-4">
+      <a href="inicio.html" class="brand-logo"><i class="material-icons">home</i>Inicio</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="facultades.html">Facultades</a></li>
+        <li><a href="proveedores.html">Proveedores</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="usuarios.html">Usuarios</a></li>
+        <li><a href="tipodescripcion.html">Tipo Descripcion</a></li>
+        <li><a href="vehiculos.html">Vehiculos</a></li>
+        <li class="salir #000000 black"><a href="index.html"><i
+              class="material-icons right">power_settings_new</i>Salir</a></li>
+      </ul>
     </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="inicio.html"><i class="material-icons">home</i>Inicio</a></li>
+    <li><a href="facultades.html">Facultades</a></li>
+    <li><a href="proveedores.html">Proveedores</a></li>
+    <li><a href="perfil.html">Perfil</a></li>
+    <li><a href="usuarios.html">Usuarios</a></li>
+    <li><a href="tipodescripcion.html">Tipo Descripcion</a></li>
+    <li><a href="vehiculos.html">Vehiculos</a></li>
+    <li class="salir #000000 black"><a href="index.html"><span class="white-text "><i
+            class="material-icons right center">power_settings_new</i>Salir</span></a></li>
+  </ul><span class="blue-text text-darken-2"></span>
+
+  <div class="container">
+    <h3>Nuevo Seguimiento</h3>
+    <div class="row">
+        <div class="col s12 m12 l12">
+        </div>
+    </div>
+    <div class="row white z-depth-2">
+      <div class="col s12 m12 l12">
+        <div class="card">
+          <div class="card-content">
+            <div class="form-field">
+                <label for="guial"><h5>Guia: </h5></label>
+                <h5>Jardin Botanico</h5>
+            </div>
+            <div class="form-field">
+                    <label for="estudiantesl"><h5>Numero de estudaintes: </h5></label>
+                    <input type="number" name="nestu" id="nestu" value="15">
+            </div>
+            <div class="form-field">
+                    <label for="benefi"><h5>Numero de beneficiarios: </h5></label>
+                    <input type="number" name="nestu" id="nestu" value="15">
+            </div>
+            <div class="form-field">
+                    <label for="Docente"><h5>Docente Responsable: </h5></label>
+                    <div class="input-field">
+                        <select name="doc" id="doc">
+                            <option value="1">Ing.Corenejo</option>
+                            <option value="2">Ing. Acevedo</option>
+                        </select>
+                    </div>
+            </div>
+            <div class="form-field">
+                <label for="descN"><h5>Descripcion: </h5></label>
+                <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-field">
+                    <label for="evid"><h5>Evidencia: </h5></label>
+                    <button class="btn waves-effect waves-light pink darken-4" type="submit" name="action"> Subir Archivo</button>
+            </div><br>
+            <div class="form-field">
+                <button class="btn waves-effect waves-light pink darken-4" type="submit" name="action">Guardar
+                    <i class="material-icons right">send</i>
+                </button>
+                <button class="btn waves-effect waves-light pink darken-4" type="submit" name="action">Cancelar
+                    <i class="material-icons right">cancel</i>
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
